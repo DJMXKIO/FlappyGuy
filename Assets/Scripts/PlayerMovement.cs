@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private Rigidbody2D rb;
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -15,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey("space"))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 6, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 6f, 0);
         }
     }
 }
