@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
+    
     private Rigidbody2D rb;
     
 
@@ -18,7 +20,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey("space"))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 6f, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 5f, 0);
         }
     }
+   
 }
