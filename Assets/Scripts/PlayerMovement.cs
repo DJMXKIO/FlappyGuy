@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey("space"))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 5f, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector3(0, 4f, 0);
             jumpSoundEffect.Play();
         }
         if (Input.touchCount > 0 && Input.GetTouch(8).phase == TouchPhase.Began)
